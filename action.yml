@@ -11,9 +11,13 @@ inputs:
   accountKey:
     description: 'AccountKey of B4App account'
     required: true
+  path:
+    description: 'Optional subdirectory path'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.project }}
     - ${{ inputs.accountKey }}
+    - ${{ inputs.path }}
