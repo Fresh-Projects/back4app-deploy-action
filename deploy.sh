@@ -6,6 +6,8 @@ source /root/.bashrc
 
 if ! [ -z "$3" ]; then
     echo "Custom Path: $3"
+    pwd
+    ls
     cd $3
 else
     echo "Default Path"
