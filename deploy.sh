@@ -14,4 +14,4 @@ else
 fi
 
 b4a default "$1"
-b4a deploy
+b4a deploy -n 0
